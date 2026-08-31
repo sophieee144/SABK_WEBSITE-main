@@ -56,6 +56,165 @@ img {
     padding: 0 32px;
 }
 
+.about-card {
+    background: #fff;
+    border-radius: 26px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: .85fr 1.1fr .75fr;
+    gap: 40px;
+    align-items: center;
+    box-shadow: 0 18px 50px rgba(43, 20, 16, .06);
+    position: relative;
+    z-index: 3;
+    top: -40px;
+    max-width: 1116px;
+    margin-inline: auto;
+}
+
+/* visual (illustration instead of photo) */
+.about-visual {
+    position: relative;
+    height: 260px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(160deg, var(--peach), var(--pink-soft));
+}
+
+.visual-shape {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 150px;
+    height: 150px;
+    background: var(--orange);
+    opacity: .45;
+    border-radius: 50%;
+}
+
+.illus-laptop {
+    position: absolute;
+    bottom: 34px;
+    left: 34px;
+    width: 120px;
+}
+
+.illus-screen {
+    width: 100%;
+    height: 72px;
+    background: var(--ink);
+    border-radius: 8px 8px 2px 2px;
+}
+
+.illus-base {
+    width: 112%;
+    margin-inline-start: -6%;
+    height: 9px;
+    background: var(--ink-soft);
+    border-radius: 0 0 6px 6px;
+}
+
+.illus-plant {
+    position: absolute;
+    bottom: 24px;
+    right: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.illus-leaf {
+    width: 64px;
+    height: 100px;
+    margin-bottom: -18px;
+}
+
+.illus-pot {
+    width: 38px;
+    height: 36px;
+    background: #fff;
+    border-radius: 0 0 18px 18px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 6px 14px rgba(43, 20, 16, .15);
+}
+
+/* bio */
+.about-content h3 {
+    color: var(--pink);
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.about-content h4 {
+    color: var(--orange-deep);
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+}
+
+.about-content p {
+    color: var(--ink-soft);
+    line-height: 1.9;
+}
+
+.about-signature {
+    font-family: 'Changa', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--ink);
+    margin-top: 16px;
+}
+
+.about-signature span {
+    color: var(--pink);
+}
+
+/* service list */
+.about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-inline-start: 1px solid rgba(43, 20, 16, .1);
+    padding-inline-start: 30px;
+}
+
+.about-list-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    font-size: .95rem;
+    color: var(--ink);
+}
+
+.icon-badge {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--pink-soft);
+    color: var(--orange-deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+@media(max-width:900px) {
+    .about-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-list {
+        border-inline-start: none;
+        border-top: 1px solid rgba(43, 20, 16, .1);
+        padding-inline-start: 0;
+        padding-top: 24px;
+        align-items: center;
+    }
+}
+
 /* ---------- NAV ---------- */
 header {
     position: sticky;
@@ -622,7 +781,7 @@ nav {
     line-height: 1.8;
 }
 
-/* ---------- STATS ---------- */
+/* ---------- STATS ----------
 .stats {
     padding: 60px 0;
 }
@@ -665,63 +824,8 @@ nav {
 
 .stat-box:nth-child(4) {
     background: linear-gradient(135deg, var(--orange), var(--pink));
-}
+} */
 
-/* ---------- TESTIMONIALS ---------- */
-.testimonials {
-    padding: 90px 0;
-}
-
-.test-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-
-.test-card {
-    background: #fff;
-    border-radius: 20px;
-    padding: 30px 26px;
-    position: relative;
-    border: 1px solid rgba(43, 20, 16, .06);
-}
-
-.test-card .quote-mark {
-    font-family: 'Changa', sans-serif;
-    font-size: 2.6rem;
-    color: var(--pink-soft);
-    line-height: 1;
-    margin-bottom: 6px;
-}
-
-.test-card p {
-    color: var(--ink);
-    line-height: 1.9;
-    margin-bottom: 20px;
-    font-size: .98rem;
-}
-
-.test-person {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.test-avatar {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-}
-
-.test-person strong {
-    display: block;
-    font-size: .92rem;
-}
-
-.test-person span {
-    font-size: .8rem;
-    color: var(--ink-soft);
-}
 
 /* ---------- CTA / FOOTER ---------- */
 footer {

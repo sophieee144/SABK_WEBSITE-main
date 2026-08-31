@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ابدأ مشروعك | سبك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Changa:wght@500;600;700;800&family=Cairo:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style_commande.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a class="back-link" href="../index.html">→ العودة للرئيسية</a>
+      <div class="logo">سبك<span>.</span></div>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="blob-a"></div>
+    <div class="blob-b"></div>
+    <div class="wrap page-hero-inner">
+      <span class="eyebrow-badge">لنبدأ مشروعك</span>
+      <h1>حدّثنا عن فكرتك <span class="script">ونحن نصبّها</span></h1>
+      <p>عبّي النموذج بمعلومات مشروعك، وفريقنا بيراجعها ويرجعلك بأقرب وقت باقتراح مناسب لاحتياجاتك.</p>
+    </div>
+  </section>
+
+  <div class="wrap project-layout">
+
+    <form class="form-card">
+
+      <div class="form-section">
+        <label class="group-label">معلوماتك الأساسية <span class="step-num">1</span></label>
+        <div class="two-col">
+          <div class="field">
+            <label>الاسم الكامل</label>
+            <input type="text" placeholder="مثال: سارة أحمد">
+          </div>
+          <div class="field">
+            <label>اسم النشاط / الشركة</label>
+            <input type="text" placeholder="اختياري">
+          </div>
+        </div>
+        <div class="two-col">
+          <div class="field">
+            <label>البريد الإلكتروني</label>
+            <input type="email" placeholder="example@email.com">
+          </div>
+          <div class="field">
+            <label>رقم الهاتف</label>
+            <input type="tel" placeholder="05xxxxxxxx">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <label class="group-label">ما الخدمة اللي تحتاجها؟ <span class="step-num">2</span></label>
+        <div class="chip-group">
+          <label class="chip"><input type="checkbox" name="service"><span class="chip-body">🎨 هوية بصرية</span></label>
+          <label class="chip"><input type="checkbox" name="service"><span class="chip-body">💻 تصميم موقع</span></label>
+          <label class="chip"><input type="checkbox" name="service"><span class="chip-body">⚙️ تطوير موقع</span></label>
+          <label class="chip"><input type="checkbox" name="service"><span class="chip-body">📊 عرض
+              PowerPoint</span></label>
+          <label class="chip"><input type="checkbox" name="service"><span class="chip-body">📄 مستند Word</span></label>
+          <label class="chip"><input type="checkbox" name="service"><span class="chip-body">📈 جدول Excel</span></label>
+          <label class="chip"><input type="checkbox" name="service"><span class="chip-body">✨ واجهة UI/UX</span></label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <label class="group-label">الميزانية التقريبية <span class="step-num">3</span></label>
+        <div class="budget-group">
+          <label class="budget-option">
+            <input type="radio" name="budget">
+            <div class="box">
+              <div class="amount">أقل من 300$</div>
+              <div class="note">مشروع بسيط</div>
+            </div>
+          </label>
+          <label class="budget-option">
+            <input type="radio" name="budget">
+            <div class="box">
+              <div class="amount">300$ – 800$</div>
+              <div class="note">مشروع متوسط</div>
+            </div>
+          </label>
+          <label class="budget-option">
+            <input type="radio" name="budget">
+            <div class="box">
+              <div class="amount">أكثر من 800$</div>
+              <div class="note">مشروع متكامل</div>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <label class="group-label">تفاصيل المشروع <span class="step-num">4</span></label>
+        <div class="field">
+          <label>خبرنا أكثر عن فكرتك وأهدافك</label>
+          <textarea
+            placeholder="مثال: أحتاج هوية بصرية جديدة لمشروع قهوة مختصة، مع تصميم موقع بسيط يعرض المنتجات..."></textarea>
+        </div>
+        <div class="field">
+          <label>وقت التسليم المطلوب</label>
+          <select>
+            <option>مرن — مافي استعجال</option>
+            <option>خلال أسبوعين</option>
+            <option>خلال شهر</option>
+            <option>عاجل — أقل من أسبوع</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">إرسال تفاصيل المشروع</button>
+      <p class="form-note">بترسل النموذج بترد عليك خلال 24 ساعة عمل</p>
+    </form>
+
+    <aside class="sidebar">
+      <div class="side-card steps">
+        <h3>وش يصير بعد الإرسال؟</h3>
+        <div class="step-item">
+          <div class="dot">1</div>
+          <div><strong>نراجع طلبك</strong><span>نطّلع على تفاصيل مشروعك خلال يوم عمل واحد</span></div>
+        </div>
+        <div class="step-item">
+          <div class="dot">2</div>
+          <div><strong>مكالمة تعارف قصيرة</strong><span>نتفق على التفاصيل والجدول الزمني</span></div>
+        </div>
+        <div class="step-item">
+          <div class="dot">3</div>
+          <div><strong>عرض سعر واضح</strong><span>نرسل لك تفاصيل التكلفة والمدة قبل البدء</span></div>
+        </div>
+        <div class="step-item">
+          <div class="dot">4</div>
+          <div><strong>نبدأ العمل</strong><span>نصبّ فكرتك خطوة بخطوة لين التسليم</span></div>
+        </div>
+      </div>
+
+      <div class="side-card contact">
+        <h3>تفضّل تتواصل مباشرة؟</h3>
+        <p>تقدر تراسلنا أو تتصل بنا مباشرة إذا حاب توضح شي قبل تعبئة النموذج.</p>
+        <div class="contact-line">✉️ hello@sabk.studio</div>
+        <div class="contact-line">📞 966+ xx xxx xxxx</div>
+        <div class="contact-line">📍 عن بُعد — نخدم كل الوطن العربي</div>
+      </div>
+
+      <div class="side-card faq">
+        <h3>أسئلة شائعة</h3>
+        <div class="faq-item">
+          <strong>كم يستغرق المشروع؟</strong>
+          <span>يعتمد على نوع الخدمة، عادة بين أسبوع وثلاث أسابيع.</span>
+        </div>
+        <div class="faq-item">
+          <strong>هل فيه تعديلات بعد التسليم؟</strong>
+          <span>نعم، كل مشروع يشمل جولتين تعديل مجانية.</span>
+        </div>
+        <div class="faq-item">
+          <strong>كيف تتم عملية الدفع؟</strong>
+          <span>دفعة مقدمة عند البدء، والباقي عند التسليم النهائي.</span>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+</body>
+
+</html>
