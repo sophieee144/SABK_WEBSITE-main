@@ -7,6 +7,7 @@
   <title>سبك | استوديو تصميم وتطوير</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Changa:wght@500;600;700;800&family=Cairo:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
@@ -17,7 +18,7 @@
 
   <header>
     <nav>
-      <button class="cta-btn" style="font-size:.85rem;padding:10px 20px;">لنبدأ مشروعك</button>
+      <a href="ibda_mashro3ek.html"><button class="cta-btn" style="font-size:.85rem;padding:10px 20px;">لنبدأ مشروعك</button></a>
       <ul class="nav-links">
         <li><a href="#work">أعمالنا</a></li>
         <li><a href="#services">خدماتنا</a></li>
@@ -28,6 +29,8 @@
       <button class="menu-toggle">☰</button>
     </nav>
   </header>
+
+  <!-- <div id="header-placeholder"></div> -->
 
   <section class="hero">
     <div class="blob-pink"></div>
@@ -238,6 +241,20 @@
       </div>
     </div>
   </footer>
+
+  <!-- <script>
+    function loadHTML(placeholderId, file) {
+      fetch(file)
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById(placeholderId).outerHTML = data;
+        })
+        .catch(err => console.error(`Error loading ${file}:`, err));
+    }
+
+    loadHTML("header-placeholder", "homepage/header.html");
+    loadHTML("footer-placeholder", "homepage/footer.html");
+  </script> -->
 
 </body>
 
