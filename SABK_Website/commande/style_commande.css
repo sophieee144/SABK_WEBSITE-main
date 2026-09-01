@@ -62,15 +62,18 @@ nav {
     margin: 0 auto;
 }
 
+.nav-logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
 .logo {
     font-family: 'Changa', sans-serif;
     font-weight: 800;
     font-size: 1.7rem;
     color: var(--orange-deep);
-}
-
-.logo span {
-    color: var(--pink);
 }
 
 .back-link {

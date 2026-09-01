@@ -45,6 +45,13 @@ ul {
     list-style: none;
 }
 
+.nav-logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
 img {
     max-width: 100%;
     display: block;
